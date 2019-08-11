@@ -14,6 +14,8 @@ def listener():
     rospy.spin()
 
 def callback(data):
+    print("Have smt")
+    print(data)
     rospy.loginfo(rospy.get_name())
     rospy.loginfo(data)
 
