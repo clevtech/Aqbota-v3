@@ -27,14 +27,6 @@ Controller::Controller(driver motor_driver, int pwm_pin, int motor_pinA, int mot
             analogWrite(motor_pinA_, 0);
 
             break;
-
-        case ESC:
-            motor_.attach(motor_pinA_);
-
-            //ensure that the motor is in neutral state during bootup
-            motor_.writeMicroseconds(1500);
-
-            break;
     }
 }
 
@@ -73,11 +65,6 @@ void Controller::spin(int pwm)
                 analogWrite(motor_pinB_, 0);
                 analogWrite(motor_pinA_, 0);
             }
-
-            break;
-        
-        case ESC:
-            motor_.writeMicroseconds(1500 + pwm);
 
             break;
     }

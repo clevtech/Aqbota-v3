@@ -1,7 +1,7 @@
 #ifndef MOTOR_H
 #define MOTOR_H
 
-#include <Servo.h> 
+#include <analogWrite.h>
 #include <Arduino.h>
 
 class Controller
@@ -12,7 +12,6 @@ class Controller
         void spin(int pwm);
 
     private:
-        Servo motor_;
         driver motor_driver_;
         int pwm_pin_;
         int motor_pinA_;

@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.osx": {
+        "PATH": "/Users/naboo/.platformio/penv/bin:/Users/naboo/.platformio/penv:/usr/local/opt/openssl/bin:/usr/local/sbin:/usr/local/opt/qt/bin:/usr/local/opt/apr/bin:/usr/local/opt/apr-util/bin:/usr/local/opt/apr/bin:/usr/local/opt/apr-util/bin:/Users/naboo/Library/Android/sdk/tools:/Users/naboo/Library/Android/sdk/platform-tools:/Users/naboo/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS",
+        "PLATFORMIO_CALLER": "vscode"
+    }
+}

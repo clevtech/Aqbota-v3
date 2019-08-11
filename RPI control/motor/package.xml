@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+  <name>qmobot_motor</name>
+  <version>0.6.2</version>
+  <description>Generic keyboard teleop for twist robots.</description>
+
+  <maintainer email="dr.cleverest@gmail.com">Bauyrzhan Ospan</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://qmobot.com</url>
+
+  <author>Bauyrzhan Ospan</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>rospy</run_depend>
+</package>
