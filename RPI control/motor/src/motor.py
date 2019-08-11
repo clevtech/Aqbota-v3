@@ -10,7 +10,7 @@ from geometry_msgs.msg import Twist
 
 def listener():
     rospy.init_node('listener', anonymous=True)
-    rospy.Subscriber("chatter", Twist, callback)
+    rospy.Subscriber("/cmd_vel", Twist, callback)
     rospy.spin()
 
 def callback(data):
