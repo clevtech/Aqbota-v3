@@ -16,6 +16,8 @@ def listener():
 def callback(data):
     print("Have smt")
     print(data)
+    print(data.linear)
+    print(data.linear.x)
     rospy.loginfo(rospy.get_name())
     rospy.loginfo(data)
 
