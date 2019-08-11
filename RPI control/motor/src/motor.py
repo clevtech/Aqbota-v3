@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 from __future__ import print_function
 
@@ -8,4 +8,14 @@ import rospy
 
 from geometry_msgs.msg import Twist
 
-import sys, select, termios, tty
+def listener():
+    rospy.init_node('listener', anonymous=True)
+    rospy.Subscriber("chatter", Twist, callback)
+    rospy.spin()
+
+def callback(data):
+    rospy.loginfo(rospy.get_name())
+    rospy.loginfo(data)
+
+if __name__ == '__main__':
+    listener()
