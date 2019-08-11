@@ -18,6 +18,7 @@ def callback(data):
     print(data)
     print(data.linear)
     print(data.linear.x)
+    print(type(data.linear.x))
     rospy.loginfo(rospy.get_name())
     rospy.loginfo(data)
 
