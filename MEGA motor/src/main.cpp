@@ -4,33 +4,25 @@
     #include <WProgram.h>
 #endif
 
+#include <analogWrite.h>
+
 #include "ros.h"
 #include "ros/time.h"
 //header file for publishing velocities for odom
 #include "lino_msgs/Velocities.h"
 //header file for cmd_subscribing to "cmd_vel"
 #include "geometry_msgs/Twist.h"
-//header file for pid server
-#include "lino_msgs/PID.h"
-//header file for imu
-#include "lino_msgs/Imu.h"
+
 
 #include "lino_base_config.h"
 #include "Motor.h"
 #include "Kinematics.h"
 #include "PID.h"
 
-// #define ENCODER_OPTIMIZE_INTERRUPTS // comment this out on Non-Teensy boards
-#include "Encoder.h"
 
 #define IMU_PUBLISH_RATE 20 //hz
 #define COMMAND_RATE 20 //hz
 #define DEBUG_RATE 5
-
-Encoder motor1_encoder(MOTOR1_ENCODER_A, MOTOR1_ENCODER_B, COUNTS_PER_REV);
-Encoder motor2_encoder(MOTOR2_ENCODER_A, MOTOR2_ENCODER_B, COUNTS_PER_REV); 
-Encoder motor3_encoder(MOTOR3_ENCODER_A, MOTOR3_ENCODER_B, COUNTS_PER_REV); 
-Encoder motor4_encoder(MOTOR4_ENCODER_A, MOTOR4_ENCODER_B, COUNTS_PER_REV); 
 
 Controller motor1_controller(Controller::MOTOR_DRIVER, MOTOR1_PWM, MOTOR1_IN_A, MOTOR1_IN_B);
 Controller motor2_controller(Controller::MOTOR_DRIVER, MOTOR2_PWM, MOTOR2_IN_A, MOTOR2_IN_B); 
