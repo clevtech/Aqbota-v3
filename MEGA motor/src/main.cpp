@@ -102,7 +102,7 @@ void loop()
     //this block displays the encoder readings. change DEBUG to 0 if you don't want to display
     if(DEBUG)
     {
-        if ((millis() - prev_debug_time) >= (1000 / DEBUG_RATE))
+        if ((millis() - prev_debug_time) >= (100000 / DEBUG_RATE))
         {
             printDebug();
             prev_debug_time = millis();
@@ -161,8 +161,9 @@ void printDebug()
 {
     char buffer[50];
 
-    sprintf (buffer, "Encoder FrontLeft  : %ld", motor1_encoder.read());
+    sprintf (buffer, "Encoder FrontLeft  : %ld", 0);
     nh.loginfo(buffer);
-    sprintf (buffer, "Encoder FrontRight : %ld", motor2_encoder.read());
+    sprintf (buffer, "Encoder FrontRight : %ld", 0);
     nh.loginfo(buffer);
 }
+

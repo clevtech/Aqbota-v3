@@ -112,7 +112,7 @@ ROBOT ORIENTATION
   #define MOTOR4_IN_A 4
   #define MOTOR4_IN_B 3
 
-  #define PWM_MAX 255
+  #define PWM_MAX 125
   #define PWM_MIN -PWM_MAX
 #endif
 
