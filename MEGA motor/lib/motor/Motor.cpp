@@ -52,11 +52,13 @@ void Controller::spin(int pwm)
         case BTS7960:
             if (pwm > 0)
             {
+                pwm = 127;
                 analogWrite(motor_pinA_, 0);
                 analogWrite(motor_pinB_, abs(pwm));
             }
             else if (pwm < 0)
             {
+                pwm = 127;
                 analogWrite(motor_pinB_, 0);
                 analogWrite(motor_pinA_, abs(pwm));
             }

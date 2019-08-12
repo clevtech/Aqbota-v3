@@ -161,9 +161,9 @@ void printDebug()
 {
     char buffer[50];
 
-    sprintf (buffer, "Encoder FrontLeft  : %ld", 0);
+    sprintf (buffer, "Encoder FrontLeft  : %f", 0.0);
     nh.loginfo(buffer);
-    sprintf (buffer, "Encoder FrontRight : %ld", 0);
+    sprintf (buffer, "Encoder FrontRight : %f", 0.0);
     nh.loginfo(buffer);
 }
 
