@@ -1,4 +1,5 @@
 #include "Motor.h"
+#include <analogWrite.h>
 
 Controller::Controller(driver motor_driver, int pwm_pin, int motor_pinA, int motor_pinB):
     motor_driver_(motor_driver),
