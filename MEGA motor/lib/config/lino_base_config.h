@@ -101,8 +101,8 @@ ROBOT ORIENTATION
   #define MOTOR1_IN_B 12
 
   #define MOTOR2_PWM 8 //DON'T TOUCH THIS! This is just a placeholder
-  #define MOTOR2_IN_A 11
-  #define MOTOR2_IN_B 10
+  #define MOTOR2_IN_A 14
+  #define MOTOR2_IN_B 27
 
   #define MOTOR3_PWM 0 //DON'T TOUCH THIS! This is just a placeholder
   #define MOTOR3_IN_A 22
